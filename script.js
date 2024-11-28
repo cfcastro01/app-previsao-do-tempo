@@ -49,7 +49,7 @@ function displaySuggestions(cities) {
 async function fetchSuggestions(query) {
   try {
     // Busca as cidades no Brasil
-    const urlBrazil = `http://api.openweathermap.org/geo/1.0/direct?q=${query},BR&limit=10&appid=${key}`;
+    const urlBrazil = `https://api.openweathermap.org/geo/1.0/direct?q=${query},BR&limit=10&appid=${key}`;
     const responseBrazil = await fetch(urlBrazil);
     const dataBrazil = await responseBrazil.json();
 
@@ -62,7 +62,7 @@ async function fetchSuggestions(query) {
     }, []);
 
     // Busca as cidades globais (caso não encontre o suficiente no Brasil)
-    const urlGlobal = `http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=10&appid=${key}`;
+    const urlGlobal = `https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=10&appid=${key}`;
     const responseGlobal = await fetch(urlGlobal);
     const dataGlobal = await responseGlobal.json();
 
