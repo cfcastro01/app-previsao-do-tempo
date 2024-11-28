@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./img/alpine_meadow-wallpaper-1600x900.jpg");
+}
+
+.box-content {
+  background: #000;
+  opacity: 0.8;
+  width: 95%;
+  max-width: 450px;
+  padding: 24px;
+  border-radius: 20px;
+}
+
+.top-box {
+  margin-bottom: 24px;
+}
+
+.top-box input {
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-size: 1rem;
+  background-color: #7c7c7c2b;
+  color: #fff;
+  width: calc(100% - 60px);
+}
+
+.top-box button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 48px;
+  background-color: #7c7c7c2b;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+} 
+
+.top-box .search-icon {
+  width: 24px;
+}
+
+.middle-box {
+  color:#fff;
+  margin-bottom: 24px;
+}
+
+.middle-box h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.middle-box p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.bottom-box {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.bottom-box p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.bottom-box .weather-icon {
+  width: 24px;
+  color: #fff;
+}
+
+.bottom-box p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.weather-quality {
+  color: #fff;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
