@@ -97,3 +97,40 @@ body {
   font-size: 0.8rem;
   text-transform: capitalize;
 }
+
+/* Estiliza o container de sugestões */
+.suggestions-box {
+  list-style: none; /* Remove os marcadores */
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Borda com transparência */
+  max-height: 150px; /* Limita a altura para evitar expansão excessiva */
+  overflow-y: auto; /* Habilita barra de rolagem se necessário */
+  position: absolute; /* Permite posicionamento relativo ao pai */
+  width: calc(100% - 20px); /* Ajusta à largura do .box-content */
+  z-index: 10; /* Garante que fique acima de outros elementos */
+  top: calc(100% + 8px); /* Posiciona logo abaixo do input */
+  left: 4px; /* Mantém alinhado ao input */
+  border-radius: 10px; /* Bordas arredondadas para consistência */
+  background: #fff;
+  color: #000; /* Texto branco para contraste */
+  font-size: 0.9rem; /* Ajusta tamanho do texto */
+  display: none; /* Oculta inicialmente */
+}
+
+/* Estiliza cada item da lista */
+.suggestions-box li {
+  padding: 10px; /* Espaçamento interno */
+  cursor: pointer; /* Indica interatividade */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Separador suave */
+}
+
+/* Remove a borda do último item */
+.suggestions-box li:last-child {
+  border-bottom: none;
+}
+
+/* Efeito ao passar o mouse */
+.suggestions-box li:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Destaque suave */
+}

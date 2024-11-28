@@ -14,12 +14,17 @@
 </head>
 <body>
   <div class="box-content">
-    <div class="top-box">
-      <input class="input-city" placeholder="Digite o nome da cidade" type="text">
+    <div class="top-box" style="position: relative;">
+      <input id="city-input" class="input-city" placeholder="Digite o nome da cidade" type="text" autocomplete="off">
       <button onclick="clickButton()">
         <i class="fa-solid fa-magnifying-glass search-icon"></i>
       </button>
+      <ul id="suggestions" class="suggestions-box"></ul>
     </div>
+
+    <!-- Container para as sugestões -->
+    <ul id="suggestions" class="suggestions-box"></ul>
+
 
     <div class="middle-box">
       <h2 class="city-name">Tempo em São Paulo</h2>
